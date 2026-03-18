@@ -15,6 +15,7 @@ virtualFolder:
         - path: ../../user/time.c
         - path: ../../user/led.c
         - path: ../../user/sys_tick.c
+        - path: ../../user/USARTlist.c
       folders: []
     - name: library
       files:
