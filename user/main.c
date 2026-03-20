@@ -86,7 +86,7 @@ void tcp_server_recv_back(socket_client * socket_client_value, unsigned char* da
 		TcpMybuf.PCInitializationCOM=1;
 		for(sendnum=0;sendnum<length;sendnum++)
 			{
-				uart_send_byte(TcpMybuf.SLOMIDUP,data[sendnum]);
+				uart_send_byte(TcpMybuf.SLOMIDDOWN,data[sendnum]);
 			}
 		
 	

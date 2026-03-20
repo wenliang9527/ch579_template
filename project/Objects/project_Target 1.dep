@@ -1,6 +1,6 @@
 Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (..\user\main.c)(0x69BA5B6A)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\user\main.c)(0x69BA633C)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
@@ -35,7 +35,7 @@ I (..\net\net_tcp_client.h)(0x62A400D1)
 I (..\net\net_tcp_server.h)(0x63458834)
 I (..\user\time.h)(0x61CA2E4B)
 I (..\user\sys_tick.h)(0x61D66DFC)
-F (..\user\uart.c)(0x69BA5D84)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+F (..\user\uart.c)(0x69BA92DB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (..\user\uart.h)(0x69B94346)
 I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)

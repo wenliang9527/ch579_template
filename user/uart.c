@@ -286,13 +286,12 @@ void UART2_IRQHandler(void)
 				if(TcpMybuf.SLOMIDUP==Internet_IDNumber)
 					{
 						tcp_send(client_ip, SocketInf[socket1->socket_id].DesPort, PCUploadBuf.FrameBuf, PCUploadBuf.FramLen);//给指定的客户端发送数据//网口数据发送
-						PCUploadBuf.Point=0;
-						PCUploadBuf.FramLen=0;
 					}else
 					{
 						uart_send_byte(TcpMybuf.SLOMIDUP,data);
 					}
-            
+            PCUploadBuf.Point=0;
+						PCUploadBuf.FramLen=0;
             TcpMybuf.SLOMIDDOWN = USART_2_IDNumber;
             TcpMybuf.InitializationCOM = 1;
             break;
@@ -357,12 +356,12 @@ void UART3_IRQHandler(void)
 				if(TcpMybuf.SLOMIDUP==Internet_IDNumber)
 					{
 						tcp_send(client_ip, SocketInf[socket1->socket_id].DesPort, PCUploadBuf.FrameBuf, PCUploadBuf.FramLen);//给指定的客户端发送数据//网口数据发送
-						PCUploadBuf.Point=0;
-						PCUploadBuf.FramLen=0;
 					}else
 						{
 							uart_send_byte(TcpMybuf.SLOMIDUP,data);
 						}
+						PCUploadBuf.Point=0;
+						PCUploadBuf.FramLen=0;
             TcpMybuf.SLOMIDDOWN = USART_3_IDNumber;
             TcpMybuf.InitializationCOM = 1;
             break;
