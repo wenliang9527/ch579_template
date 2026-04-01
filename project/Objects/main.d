@@ -57,3 +57,4 @@
 .\objects\main.o: ..\net\net_tcp_server.h
 .\objects\main.o: ..\user\time.h
 .\objects\main.o: ..\user\sys_tick.h
+.\objects\main.o: ..\user\data_forward.h

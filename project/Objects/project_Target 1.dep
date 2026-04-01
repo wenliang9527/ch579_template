@@ -1,10 +1,10 @@
 Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (..\user\main.c)(0x69BA633C)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\user\main.c)(0x69CB2A2D)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (D:\MDK5\ARM\ARMCC\include\stdlib.h)(0x5E53505C)
-I (..\user\main.h)(0x634E685F)
+I (..\user\main.h)(0x69C3C0D9)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
 I (..\library\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
 I (..\library\StdPeriphDriver\inc\CH579SFR.h)(0x69ABCCB3)
@@ -24,7 +24,7 @@ I (..\library\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
 I (..\library\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
 I (..\library\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
 I (..\library\StdPeriphDriver\inc\CH57x_usbhost.h)(0x601CB758)
-I (..\user\uart.h)(0x69B94346)
+I (..\user\uart.h)(0x69CB2B80)
 I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
 I (..\mem\LoopList.h)(0x69B8F479)
 I (..\net\net_init.h)(0x62A3E2EE)
@@ -32,12 +32,13 @@ I (..\net_library\CH57xNET.H)(0x62A5426E)
 I (..\net\net_dhcp.h)(0x62923A5B)
 I (..\net\net_dns.h)(0x61DFFD53)
 I (..\net\net_tcp_client.h)(0x62A400D1)
-I (..\net\net_tcp_server.h)(0x63458834)
-I (..\user\time.h)(0x61CA2E4B)
+I (..\net\net_tcp_server.h)(0x69C3C0D9)
+I (..\user\time.h)(0x69C3C0D9)
 I (..\user\sys_tick.h)(0x61D66DFC)
-F (..\user\uart.c)(0x69BA92DB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (..\user\data_forward.h)(0x69CB2B16)
+F (..\user\uart.c)(0x69CB2B5E)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
-I (..\user\uart.h)(0x69B94346)
+I (..\user\uart.h)(0x69CB2B80)
 I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -65,10 +66,11 @@ I (..\net_library\CH57xNET.H)(0x62A5426E)
 I (..\net\net_dhcp.h)(0x62923A5B)
 I (..\net\net_dns.h)(0x61DFFD53)
 I (..\net\net_tcp_client.h)(0x62A400D1)
-I (..\net\net_tcp_server.h)(0x63458834)
-F (..\user\time.c)(0x69B937A4)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\time.o --omf_browse .\objects\time.crf --depend .\objects\time.d)
+I (..\net\net_tcp_server.h)(0x69C3C0D9)
+I (..\user\data_forward.h)(0x69CB2B16)
+F (..\user\time.c)(0x69C3C0D9)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\time.o --omf_browse .\objects\time.crf --depend .\objects\time.d)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
-I (..\user\time.h)(0x61CA2E4B)
+I (..\user\time.h)(0x69C3C0D9)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
 I (..\library\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
@@ -89,7 +91,7 @@ I (..\library\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
 I (..\library\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
 I (..\library\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
 I (..\library\StdPeriphDriver\inc\CH57x_usbhost.h)(0x601CB758)
-I (..\user\uart.h)(0x69B94346)
+I (..\user\uart.h)(0x69CB2B80)
 I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
 I (..\mem\LoopList.h)(0x69B8F479)
 I (..\net\net_init.h)(0x62A3E2EE)
@@ -97,7 +99,7 @@ I (..\net_library\CH57xNET.H)(0x62A5426E)
 I (..\net\net_dhcp.h)(0x62923A5B)
 I (..\net\net_dns.h)(0x61DFFD53)
 I (..\net\net_tcp_client.h)(0x62A400D1)
-I (..\net\net_tcp_server.h)(0x63458834)
+I (..\net\net_tcp_server.h)(0x69C3C0D9)
 F (..\user\led.c)(0x611FF302)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (..\user\led.h)(0x61CA3043)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
@@ -144,7 +146,7 @@ I (..\library\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
 I (..\library\StdPeriphDriver\inc\CH57x_usbhost.h)(0x601CB758)
 F (..\user\USARTlist.c)(0x69BA58AB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\usartlist.o --omf_browse .\objects\usartlist.crf --depend .\objects\usartlist.d)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
-I (..\user\uart.h)(0x69B94346)
+I (..\user\uart.h)(0x69CB2B80)
 I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -172,7 +174,39 @@ I (..\net_library\CH57xNET.H)(0x62A5426E)
 I (..\net\net_dhcp.h)(0x62923A5B)
 I (..\net\net_dns.h)(0x61DFFD53)
 I (..\net\net_tcp_client.h)(0x62A400D1)
-I (..\net\net_tcp_server.h)(0x63458834)
+I (..\net\net_tcp_server.h)(0x69C3C0D9)
+F (..\user\data_forward.c)(0x69CB2AE3)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\data_forward.o --omf_browse .\objects\data_forward.crf --depend .\objects\data_forward.d)
+I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
+I (..\user\data_forward.h)(0x69CB2B16)
+I (D:\MDK5\ARM\ARMCC\include\stdint.h)(0x5E53505C)
+I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
+I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
+I (..\library\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
+I (..\library\StdPeriphDriver\inc\CH579SFR.h)(0x69ABCCB3)
+I (..\library\CMSIS\Include\core_cm0.h)(0x5C2C2AFC)
+I (..\library\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
+I (..\library\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
+I (..\library\StdPeriphDriver\inc\CH57x_uart.h)(0x611FD76D)
+I (..\library\StdPeriphDriver\inc\CH57x_gpio.h)(0x60F4E47B)
+I (..\library\StdPeriphDriver\inc\CH57x_lcd.h)(0x5C6D0596)
+I (..\library\StdPeriphDriver\inc\CH57x_flash.h)(0x5E913D32)
+I (..\library\StdPeriphDriver\inc\CH57x_pwr.h)(0x5E82B97C)
+I (..\library\StdPeriphDriver\inc\CH57x_pwm.h)(0x5C6D059A)
+I (..\library\StdPeriphDriver\inc\CH57x_adc.h)(0x5E912E5C)
+I (..\library\StdPeriphDriver\inc\CH57x_sys.h)(0x5DD28746)
+I (..\library\StdPeriphDriver\inc\CH57x_timer.h)(0x5FC732DC)
+I (..\library\StdPeriphDriver\inc\CH57x_spi.h)(0x5F33B292)
+I (..\library\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
+I (..\library\StdPeriphDriver\inc\CH57x_usbhost.h)(0x601CB758)
+I (..\user\uart.h)(0x69CB2B80)
+I (..\mem\LoopList.h)(0x69B8F479)
+I (..\net\net_init.h)(0x62A3E2EE)
+I (..\net_library\CH57xNET.H)(0x62A5426E)
+I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
+I (..\net\net_dhcp.h)(0x62923A5B)
+I (..\net\net_dns.h)(0x61DFFD53)
+I (..\net\net_tcp_client.h)(0x62A400D1)
+I (..\net\net_tcp_server.h)(0x69C3C0D9)
 F (..\library\StdPeriphDriver\CH57x_adc.c)(0x5E912E5E)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\ch57x_adc.o --omf_browse .\objects\ch57x_adc.crf --depend .\objects\ch57x_adc.d)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
@@ -804,8 +838,8 @@ I (..\library\StdPeriphDriver\inc\CH57x_usbdev.h)(0x5C6D05D0)
 I (..\library\StdPeriphDriver\inc\CH57x_usbhost.h)(0x601CB758)
 I (..\net_library\CH57xNET.H)(0x62A5426E)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
-F (..\net\net_tcp_server.c)(0x69B9215A)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\net_tcp_server.o --omf_browse .\objects\net_tcp_server.crf --depend .\objects\net_tcp_server.d)
-I (..\net\net_tcp_server.h)(0x63458834)
+F (..\net\net_tcp_server.c)(0x69C3C0D9)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\library\StdPeriphDriver\inc -I ..\user -I ..\ufi_library -I ..\mem -I ..\net -I ..\net_library -I ..\library\CMSIS\Include-I.\RTE\_Target_1-ID:\MDK5\Keil\WCH57x_DFP\1.1.0\Drivers\CMSIS\Device\WCH\CH57x\Include-ID:\MDK5\ARM\CMSIS\Include-ID:\MDK5\Keil\WCH57x_DFP\1.1.0-D__UVISION_VERSION="530" -D_RTE_-o .\objects\net_tcp_server.o --omf_browse .\objects\net_tcp_server.crf --depend .\objects\net_tcp_server.d)
+I (..\net\net_tcp_server.h)(0x69C3C0D9)
 I (..\library\StdPeriphDriver\inc\CH57x_common.h)(0x61D65FAE)
 I (D:\MDK5\ARM\ARMCC\include\string.h)(0x5E53505C)
 I (..\library\StdPeriphDriver\inc\CH57x_clk.h)(0x5FA90752)
@@ -829,7 +863,7 @@ I (..\library\StdPeriphDriver\inc\CH57x_usbhost.h)(0x601CB758)
 I (..\net_library\CH57xNET.H)(0x62A5426E)
 I (..\net\net_init.h)(0x62A3E2EE)
 I (D:\MDK5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
-I (..\user\uart.h)(0x69B94346)
+I (..\user\uart.h)(0x69CB2B80)
 I (D:\MDK5\ARM\ARMCC\include\stdbool.h)(0x5E53505C)
 I (..\mem\LoopList.h)(0x69B8F479)
 I (..\net\net_dhcp.h)(0x62923A5B)

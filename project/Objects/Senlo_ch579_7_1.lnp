@@ -5,6 +5,7 @@
 ".\objects\led.o"
 ".\objects\sys_tick.o"
 ".\objects\usartlist.o"
+".\objects\data_forward.o"
 ".\objects\ch57x_adc.o"
 ".\objects\ch57x_clk.o"
 ".\objects\ch57x_flash.o"

@@ -53,3 +53,4 @@
 .\objects\uart.o: ..\net\net_dns.h
 .\objects\uart.o: ..\net\net_tcp_client.h
 .\objects\uart.o: ..\net\net_tcp_server.h
+.\objects\uart.o: ..\user\data_forward.h
